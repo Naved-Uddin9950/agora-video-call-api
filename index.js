@@ -10,8 +10,11 @@ app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Agora App details (replace with your actual Agora App ID and certificate)
-const APP_ID = "243bf9f7323a48ab95f84739505a921f";
-const APP_CERTIFICATE = "37e093701c62471bb3b446302ec158e3";
+// const APP_ID = "243bf9f7323a48ab95f84739505a921f";
+// const APP_CERTIFICATE = "37e093701c62471bb3b446302ec158e3";
+const APP_ID = "b91f2e1f07074f84ad9f3ed9abea0201";
+const APP_CERTIFICATE = "e0757c11ea06421586cc397e5fec5bd1";
+
 
 // Route to generate an Agora token
 app.post("/token", (req, res) => {
